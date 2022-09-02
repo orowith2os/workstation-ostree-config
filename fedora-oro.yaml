@@ -34,6 +34,7 @@ packages:
   - gnome-terminal
   - gnome-disk-utility
   - nautilus
+  - gnome-software
   # Network stuff
   - NetworkManager
   - network-manager-applet
