@@ -1,3 +1,5 @@
+# You're probably looking for `fedora-oro.yaml`
+
 # Manifests for rpm-ostree based Fedora variants
 
 This is the configuration needed to create
