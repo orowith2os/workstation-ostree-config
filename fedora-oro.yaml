@@ -1,0 +1,49 @@
+include: fedora-common-ostree.yaml
+ref: fedora/rawhide/${basearch}/base
+rojig:
+  name: fedora-oro
+  summary: "Fedora image for Oro's Sway configuration"
+  license: MIT
+packages:
+  # Generic release package for desktop variants
+  - fedora-release
+  - fedora-release-ostree-desktop
+  # XWayland support
+  - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal-wlr
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+  # Added by Oro
+  - sway
+  - waybar
+  - fish
+  - mako
+  - slurp
+  - bemenu
+  - wl-clipboard
+  - rofi
+  - wofi
+  - distrobox
+  # Themeing n whatnot
+  - breeze-cursor-theme
+  - plasma-breeze
+  - breeze-gtk
+  - lxappearance
+  # Useful GNOME utilities
+  - gnome-terminal
+  - gnome-disk-utility
+  - nautilus
+  # Network stuff
+  - NetworkManager
+  - network-manager-applet
+  - blueman
+  # Extra utilities
+  - pavucontrol
+  - wdisplays
+  - vulkan-validation-layers
+
+repos:
+  - fedora-rawhide
+  # - fedora-38
+  # - fedora-38-updates
